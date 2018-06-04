@@ -1,5 +1,5 @@
 {
-  "name": "regex-pattern",
+  "name": "regex-patterns",
   "version": "0.1.0",
   "description": "Utilities regex patterns",
   "main": "regex.js",
