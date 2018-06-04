@@ -1,14 +1,14 @@
 import describe from 'ava'
-import { regexPattern } from './regex.js'
+import { regexPatterns } from './regex.js'
 
 
 describe('Check by regex', t => {
-  t.regex('https://github.com', regexPattern.url)
-  t.regex('https://github.com/tiagoporto', regexPattern.url)
+  t.regex('https://github.com', regexPatterns.url)
+  t.regex('https://github.com/tiagoporto', regexPatterns.url)
 })
 
 describe('Check by method', t => {
-  t.true(regexPattern.isUrl('https://github.com'))
-  t.true(regexPattern.isUrl('https://github.com/tiagoporto'))
+  t.true(regexPatterns.isUrl('https://github.com'))
+  t.true(regexPatterns.isUrl('https://github.com/tiagoporto'))
 })
 
