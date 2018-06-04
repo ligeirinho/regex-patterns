@@ -4,11 +4,12 @@
   "description": "Utilities regex patterns",
   "main": "regex.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "test-watch": "npm test -- --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tiagoporto/regex-pattern.git"
+    "url": "https://github.com/tiagoporto/regex-pattern"
   },
   "keywords": [
     "regex",
@@ -19,8 +20,14 @@
   "bugs": {
     "url": "https://github.com/tiagoporto/regex-pattern/issues"
   },
-  "homepage": "https://github.com/tiagoporto/regex-pattern#readme",
+  "homepage": "https://github.com/tiagoporto/regex-pattern",
   "devDependencies": {
-    "ava": "^1.0.0-beta.5.1"
+    "@babel/register": "^7.0.0-beta.49",
+    "ava": "^1.0.0-beta.5.1",
+    "babel-cli": "^7.0.0-beta.3",
+    "babel-preset-env": "^7.0.0-beta.3"
+  },
+  "ava": {
+    "require": "@babel/register"
   }
 }
