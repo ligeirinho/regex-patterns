@@ -1,0 +1,26 @@
+{
+  "name": "regex-pattern",
+  "version": "0.1.0",
+  "description": "Utilities regex patterns",
+  "main": "regex.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiagoporto/regex-pattern.git"
+  },
+  "keywords": [
+    "regex",
+    "patterns"
+  ],
+  "author": "Tiago Porto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tiagoporto/regex-pattern/issues"
+  },
+  "homepage": "https://github.com/tiagoporto/regex-pattern#readme",
+  "devDependencies": {
+    "ava": "^1.0.0-beta.5.1"
+  }
+}
