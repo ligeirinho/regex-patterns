@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tiagoporto/regex-pattern"
+    "url": "https://github.com/tiagoporto/regex-patterns"
   },
   "keywords": [
     "regex",
@@ -18,9 +18,9 @@
   "author": "Tiago Porto",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tiagoporto/regex-pattern/issues"
+    "url": "https://github.com/tiagoporto/regex-patterns/issues"
   },
-  "homepage": "https://github.com/tiagoporto/regex-pattern",
+  "homepage": "https://github.com/tiagoporto/regex-patterns",
   "devDependencies": {
     "@babel/register": "^7.0.0-beta.49",
     "ava": "^1.0.0-beta.5.1",
