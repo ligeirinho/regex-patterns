@@ -8,4 +8,4 @@ before_install:
 
 script:
   - awesome_bot README.md --allow-redirect
-  - npm test
+  - npm test && npm run coverage

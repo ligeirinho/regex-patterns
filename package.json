@@ -4,8 +4,9 @@
   "description": "Utilities regex patterns",
   "main": "regex.js",
   "scripts": {
-    "test": "ava",
-    "test-watch": "npm test -- --watch"
+    "test": "jest --verbose --coverage",
+    "test-watch": "jest --watch"
+    "coverage": "codecov"
   },
   "repository": {
     "type": "git",
@@ -22,12 +23,13 @@
   },
   "homepage": "https://github.com/tiagoporto/regex-patterns",
   "devDependencies": {
-    "@babel/register": "^7.0.0-beta.49",
-    "ava": "^1.0.0-beta.5.1",
     "babel-cli": "^7.0.0-beta.3",
-    "babel-preset-env": "^7.0.0-beta.3"
+    "babel-preset-env": "^7.0.0-beta.3",
+    "codecov": "^3.0.2",
+    "jest": "^23.1.0"
   },
-  "ava": {
-    "require": "@babel/register"
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
   }
 }

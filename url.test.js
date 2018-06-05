@@ -1,14 +1,14 @@
-import describe from 'ava'
-import { regexPatterns } from './regex.js'
+const regexPatterns = require('./regex.js')
 
+describe('Url tests', () => {
+  test('Check by regex', () => {
+    expect('https://github.com').toMatch(regexPatterns.url)
+    expect('https://github.com/tiagoporto').toMatch(regexPatterns.url)
+  })
 
-describe('Check by regex', t => {
-  t.regex('https://github.com', regexPatterns.url)
-  t.regex('https://github.com/tiagoporto', regexPatterns.url)
-})
-
-describe('Check by method', t => {
-  t.true(regexPatterns.isUrl('https://github.com'))
-  t.true(regexPatterns.isUrl('https://github.com/tiagoporto'))
+  test('Check by method', () => {
+    expect(regexPatterns.isUrl('https://github.com')).toBeTruthy()
+    expect(regexPatterns.isUrl('https://github.com/tiagoporto')).toBeTruthy()
+  })
 })
 

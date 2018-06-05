@@ -10,4 +10,7 @@ RegexPatterns.prototype.isUrl = url => {
   return URL.test(url)
 }
 
-export const regexPatterns = new RegexPatterns()
+const regexPatterns = new RegexPatterns()
+
+module.exports = regexPatterns
+
